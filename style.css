@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: black;
+  font-size: 30px;
+  font-family: "Nabla", system-ui;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#fullpage {
+  max-width: 1400px;
+  margin: auto;
+}
+
+#navigation-wrapper {
+  width: 100%;
+  margin-top: 20px;
+  position: absolute;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo {
+  /* border: 1px solid white; */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/images/logo2.jpg");
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.navigation-box {
+  margin-right: 150px;
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  gap: 50px;
+  align-items: center;
+  color: white;
+  list-style: none;
+}
+
+.navigation-links:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.home {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/images/2burgers.jpg");
+}
+
+.home-shadow{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #00000079;
+  z-index: 1;
+}
+
+.home-title {
+  text-align: center;
+  z-index: 1;
+}
+
+.about {
+  background-color: #1d7b1a;
+}
+
+.menu {
+  background-color: #2e3eb3;
+}
+
+.contact {
+  background-color: #04ff00;
+}
+
+#footer {
+  background-color: white;
+  z-index: 2;
+  position: absolute;
+  margin-bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger's side</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="fullpage">
+      <nav id="navigation-wrapper">
+        <div class="logo"></div>
+        <ul class="navigation-box">
+          <li class="navigation-links">home</li>
+          <li class="navigation-links">about</li>
+          <li class="navigation-links">menu</li>
+          <li class="navigation-links">contact</li>
+        </ul>
+      </nav>
+      <div class="section home">
+        <div class="home-shadow"></div>
+        <h1 class="home-title">Burger's web side</h1>
+      </div>
+      <div class="section about">ABOUT</div>
+      <div class="section menu">MENU</div>
+      <div class="section contact">CONTACT</div>
+    </div>
+    <footer id="footer">footer</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.js"></script>
+    <script>
+      new fullpage("#fullpage", {
+        lockAnchors: true,
+        navigation: true,
+        css3: true,
+        scrollingSpeed: 800,
+        autoScrolling: false,
+        fitToSection: false,
+        fitToSectionDelay: 700,
+        scrollBar: true,
+        easing: "easeInOutCubic",
+        easingcss3: "ease",
+        loopBottom: true,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        continuousHorizontal: false,
+        scrollHorizontally: false,
+        interlockedSlides: false,
+        dragAndMove: false,
+        offsetSections: false,
+        resetSliders: false,
+        fadingEffect: false,
+        normalScrollElements: "#element1, .element2",
+        scrollOverflow: false,
+        scrollOverflowMacStyle: false,
+        scrollOverflowReset: false,
+        touchSensitivity: 15,
+        bigSectionsDestination: null,
+      });
+    </script>
+  </body>
+</html>
