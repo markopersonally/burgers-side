@@ -8,9 +8,11 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: #3d3d3d;
   font-size: 30px;
-  font-family: "Nabla", system-ui;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  background-color: #3d3d3d;
+  color: #fff;
 }
 
 img,
@@ -86,8 +88,9 @@ h6 {
 }
 
 .navigation-links:hover {
-  color: black;
+  color: #ffa500;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .home {
@@ -104,9 +107,38 @@ h6 {
   z-index: 1;
 }
 
+.home-title-container {
+  display: inline-block;
+  margin: 0 auto;
+  z-index: 1;
+}
+
 .home-title {
   text-align: center;
-  z-index: 1;
+  overflow: hidden;
+  border-right: 0.1em solid #ffa500;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(20, end) forwards, blink 0.8s step-end;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #ffa500;
+  }
 }
 
 .about {
@@ -166,23 +198,22 @@ h6 {
 }
 
 .menu-wrapper-item {
-  background-color: #462c12;
+  height: 150px;
+  width: 350px;
   padding: 25px;
   display: flex;
-  flex-direction: row;
-  gap: 30px;
+  background-color: #462c12;
   border: thick double #fff;
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
 }
 
 .menu-wrapper-item:hover {
-  transform: scale(0.9);
-  transition: 0.5s;
+  cursor: pointer;
 }
 
 .menu-wrapper-item-foto {
-  margin: auto;
+  margin-right: 30px;
   border: 2px solid #fff;
   width: 75px;
   height: 75px;
@@ -202,12 +233,54 @@ h6 {
 }
 
 .contact {
-  background-color: #04ff00;
+  background-color: #000000a0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-container-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(217deg, rgba(126, 52, 52, 0.811), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(47, 102, 47, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(24, 24, 62, 0.8), rgba(0,0,255,0) 70.71%);
+  border: 3px solid #fff;
+  border-radius: 10%;
+}
+
+.contact-container-items:hover {
+  scale: 0.9;
+  transition: scale 0.5s;
+}
+
+.contact-container-items-desc {
+  text-align: center;
+  font-size: medium;
+}
+
+.contact-container-items-foto {
+  width: 200px;
+  height: 150px;
 }
 
 #footer {
-  background-color: white;
-  z-index: 2;
+  padding: 50px 0;
+  width: 100%;
+  max-width: 1400px;
+  text-align: center;
+  background-color: #000000a0;
+  z-index: 1;
   position: absolute;
   margin-bottom: 0;
   left: 50%;
