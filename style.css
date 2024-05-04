@@ -77,7 +77,7 @@ h6 {
 .home {
   background-position: center;
   background-size: cover;
-  background-image: url("/images/2burgers.jpg");
+  background-image: url("./images/2burgers.jpg");
 }
 
 .home-title-container {
@@ -125,7 +125,7 @@ h6 {
 .about {
   background-position: center;
   background-size: cover;
-  background-image: url("/images/bar.jpg");
+  background-image: url("./images/bar.jpg");
 }
 
 .about-box {
@@ -150,7 +150,7 @@ h6 {
   height: 500px;
   background-position: center;
   background-size: cover;
-  background-image: url("/images/logo2.jpg");
+  background-image: url("./images/logo2.jpg");
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
 }
@@ -194,7 +194,7 @@ h6 {
 .menu {
   background-position: center;
   background-size: cover;
-  background-image: url("/images/menu.jpg");
+  background-image: url("./images/menu.jpg");
 }
 
 .menu-wrapper {
@@ -252,7 +252,7 @@ h6 {
 .contact {
   background-position: center;
   background-size: cover;
-  background-image: url("/images/contact-us-2355449_1280.jpg");
+  background-image: url("./images/contact-us-2355449_1280.jpg");
 }
 
 .contact-container {

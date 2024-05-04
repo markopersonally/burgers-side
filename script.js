@@ -4,7 +4,7 @@ new fullpage("#fullpage", {
   navigationTooltips: ["home", "about", "menu", "contact"],
   css3: false,
   scrollingSpeed: 800,
-  autoScrolling: false,
+  autoScrolling: true,
   fitToSection: false,
   fitToSectionDelay: 700,
   scrollBar: true,
